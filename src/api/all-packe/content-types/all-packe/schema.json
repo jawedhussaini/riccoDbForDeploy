@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_packes",
+  "info": {
+    "singularName": "all-packe",
+    "pluralName": "all-packes",
+    "displayName": "ALL PACKE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Prenom": {
+      "type": "string"
+    },
+    "Form": {
+      "type": "string"
+    },
+    "service": {
+      "type": "json"
+    }
+  }
+}

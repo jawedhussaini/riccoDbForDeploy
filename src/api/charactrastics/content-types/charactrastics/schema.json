@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charactrastic",
+  "info": {
+    "singularName": "charactrastics",
+    "pluralName": "charactrastic",
+    "displayName": "charactrastics"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

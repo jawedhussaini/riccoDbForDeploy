@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "working_hours",
+  "info": {
+    "singularName": "working-hour",
+    "pluralName": "working-hours",
+    "displayName": "workingHours"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Days": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}

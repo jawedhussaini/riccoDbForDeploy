@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_media_links",
+  "info": {
+    "singularName": "social-media-link",
+    "pluralName": "social-media-links",
+    "displayName": "socialMediaLinks"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Facebook": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "piro": {
+      "type": "string"
+    }
+  }
+}

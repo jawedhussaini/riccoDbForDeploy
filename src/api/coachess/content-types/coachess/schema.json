@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coaches",
+  "info": {
+    "singularName": "coachess",
+    "pluralName": "coaches",
+    "displayName": "Coaches",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Profitionalty": {
+      "type": "string"
+    },
+    "FaceBook": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Gmail": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
