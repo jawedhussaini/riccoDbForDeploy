@@ -5,10 +5,10 @@ const stripe = require('stripe')(process.env.STRIPE_KEY);
 
 module.exports = createCoreController('api::payment.payment', ({ strapi }) => ({
   async create(ctx) {
-    const { email, name, classs,prices } = ctx.request.body;
+    const { email, name, classs, prices } = ctx.request.body;
 
     try {
-      console.log('Creating Stripe session for:', { email, name, classs });
+  
 
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
@@ -22,7 +22,7 @@ module.exports = createCoreController('api::payment.payment', ({ strapi }) => ({
               product_data: {
                 name: classs,
               },
-              unit_amount: prices*100, // Replace with the actual amount in cents
+              unit_amount: prices * 100, // Amount in cents
             },
             quantity: 1,
           },
@@ -30,7 +30,7 @@ module.exports = createCoreController('api::payment.payment', ({ strapi }) => ({
         customer_email: email,
       });
 
-      console.log('Stripe session created:', session);
+  
 
       await strapi.service('api::payment.payment').create({
         data: {
