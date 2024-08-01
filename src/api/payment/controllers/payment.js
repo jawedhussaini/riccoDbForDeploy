@@ -38,6 +38,7 @@ module.exports = createCoreController('api::payment.payment', ({ strapi }) => ({
           Email: email,
           Package: classs,
           PaymentID: session.id,
+          Price:prices
         },
       });
 
