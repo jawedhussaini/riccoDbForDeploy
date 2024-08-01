@@ -1066,6 +1066,7 @@ export interface ApiPaymentPayment extends Schema.CollectionType {
     Email: Attribute.String & Attribute.Required;
     PaymentID: Attribute.String & Attribute.Required;
     Package: Attribute.String;
+    Price: Attribute.Decimal;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

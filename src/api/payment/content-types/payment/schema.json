@@ -26,6 +26,9 @@
     },
     "Package": {
       "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
     }
   }
 }
